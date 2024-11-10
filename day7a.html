@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #child1{grid-area: a1;}
+        #child2{grid-area: b1;}
+        #child3{grid-area: c1;}
+        #child4{grid-area: d1;}
+        
+        .parent{
+              display: grid;
+              grid-template-areas:'a1 b1'
+              'c1 d1' ;
+
+        }
+        .parent > div{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 10px;
+            background-color: violet;
+            /* border-radius: 50% 44%; */
+            box-shadow: 4px 4px 4px gray;
+            color: white;
+        }
+        #child1{
+            margin-top: 15px;
+            background-image: url(photo.jpg);
+            background-size: cover;
+            color: black;
+
+    
+            /* background-position: center; */
+            
+        }
+        #child2{
+            background-image: url(https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg);
+            background-size: cover;
+            background-position: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="child1">
+            Home
+            
+            <!-- <img src="photo.jpg" width="200px" height="200px"> -->
+        </div>
+        <div id="child2">about</div>
+        <div id="child3">Events</div>
+        <div id="child4">gallery</div>
+        <!-- <div id="child5">content</div> -->
+    </div>
+
+    
+</body>
+</html>
